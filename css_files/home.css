@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root{
     --white: white;
+    --black : black;
     --secondary-colors: #36454F;
     --gold:#ffba6b;
     --mallet:#181818;
@@ -17,6 +18,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+.top{
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .nav{
     position: absolute;
@@ -108,7 +116,7 @@ span2{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0,0,0.51);
+    background-color: rgba(0, 0,0,0.41);
 }
 .top-background{
     position: absolute;
@@ -215,13 +223,13 @@ h1{
 .menu-div{
     width: 30%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -30%;
     border-radius: 0px 10px 10px 0px;
     background-color: rgba(255, 255, 255, 0.60);
     backdrop-filter: blur(10px);
-    z-index: 5;
+    z-index: 56987;
     transition: 0.5s all ease-in-out;
 }
 .back{
@@ -315,4 +323,404 @@ h1{
     bottom: 5%;
     color: black;
     cursor: pointer;
+}
+.middle-product-div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 250%;
+    left: 0;    
+}
+.black2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    background-color: rgba(0, 0,0,0.31);
+    z-index: 1;
+}
+.middle-product-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+}
+.middle-product-white-div{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    background-color: rgba(255, 255, 255, 0.31);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    height: 50%;
+    width: 60%;
+    z-index: 7;
+}
+h2{
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: var(--font1);
+    z-index: 7;
+    font-size: 2rem;
+    font-weight: 100;
+    position: fixed;
+}
+.h2-para{
+    position: absolute;
+    top: 35%;
+    margin: 5%;
+    color: var(--white);
+}
+.account-down-white{
+    position: absolute;
+    width: 90%;
+    bottom: 5%;
+    left: 5%;
+    height: 15%;
+}
+account-name{
+    position: absolute;
+    font-size: 20px;
+    color: var(--white);
+    top: 25%;
+    left: 11%;
+}
+.account-div-white-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.view-creator-btn{
+    padding: 2px 5px 2px 5px;
+    border: 1px white solid;
+    background: rgba(0, 0,0,0.21);
+    height: 60%;
+    width: 20%;
+    color: var(--white);
+    position: absolute;
+    top: 5.5%;
+    border-radius: 30px;
+    right: 33%;
+    top: 30%;
+    z-index: 1;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.view-creator-btn:hover{
+    background: black;
+    border-color: black;
+    color: var(--white);
+}
+.view-creator-recipes-btn{
+    padding: 2px 5px 2px 5px;
+    border: 1px white solid;
+    background: rgba(0, 0,0,0.21);
+    height: 60%;
+    width:30%;
+    color: var(--white);
+    position: absolute;
+    top: 5.5%;
+    border-radius: 30px;
+    right: 0%;
+    top: 30%;
+    z-index: 1;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.view-creator-recipes-btn:hover{
+    background: black;
+    border-color: black;
+    color: var(--white);
+}
+.middle-white-150-div{
+    background-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 150%;
+    width: 100%;
+}
+h3{
+    font-family: 'Heebo',sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    color: black;
+}
+.h3-para{
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+    right: 1%;
+    text-align: left;
+    color: black;
+    width: 60%;
+}
+.h3-para2{
+    width: 30%;
+    top: 60%;
+    left: 3%;
+    position: absolute;
+}
+.h3-btn-down{
+    height: 3%;
+    width: 25%;
+    background: transparent;
+    border: 1px solid;
+    border-color: black;
+    color: black;
+    border-radius: 30px;
+    transition: 0.3s;
+    padding: 5px 5% 5px 5%;
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+    cursor: pointer;
+}
+.h3-btn-down:hover{
+    background:black;
+    border-color:black;
+    color: var(--white);
+    font-weight: 500;
+}
+.img1{
+    height: 30%;
+    object-fit: cover;
+    width: 20%;
+    bottom: 2%;
+    left: 40%;
+    filter: saturate(0.5);
+    position: absolute;
+    object-position: 20% 0%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.img2{
+    height: 20%;
+    object-fit: cover;
+    width: 20%;
+    bottom: 25%;
+    left: 55%;
+    filter: saturate(0.6);
+    position: absolute;
+    object-position: 20% 0%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.img3{
+    height: 20%;
+    object-fit: cover;
+    width: 20%;
+    bottom: 35%;
+    left: 33%;
+    z-index: 2;
+    filter: saturate(0.5);
+    position: absolute;
+    object-position: 20% 0%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.img4{
+    height: 30%;
+    object-fit: cover;
+    width: 20%;
+    bottom: 2%;
+    right: 8%;
+    filter: saturate(0.5);
+    position: absolute;
+    object-position: 20% 0%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.middle-white-150-down-btn{
+    height: 4%;
+    width: 25%;
+    background: transparent;
+    border: 1px solid;
+    border-color: black;
+    color: black;
+    border-radius: 30px;
+    transition: 0.3s;
+    padding: 5px 5% 5px 5%;
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+    cursor: pointer;
+}
+.middle-white-150-down-btn:hover{
+    background: black;
+    border-color: black;
+    color: var(--white);
+    font-weight: 500;
+}
+.bottom-achevements-div{
+    width: 100%;
+    height: 120%;
+    top: 320%;
+    left: 0;
+    position: absolute;
+}
+h4{
+    color: var(--black);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 3rem;
+    font-family: var(--font1);
+    font-weight: 100;
+}
+h4-para{
+    position: absolute;
+    top: 10%;
+    margin: 5%;
+}
+.inner-achivements-div{
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    width: 85%;
+    margin: 5%;
+    height: 60%;
+    justify-content: space-between;
+}
+.achivement{
+    position: relative;
+    width: 45%;
+    height: 33.33%;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+}
+.achivement-svg{
+    width: 10%;
+}
+.no-2,.no-4,.no-6{
+    margin-left: 7%;
+}
+achivement-name{
+    position: absolute;
+    font-size: 25px;
+    left: 13%;
+}
+achivement-para{
+    position: absolute;
+    top: 30%;
+    left: 13%;
+}
+.line4{
+    position: absolute;
+    top: 5%;
+    width: 2px;
+    left: 49.5%;
+    background-color: var(--black);
+    opacity: 0.2;
+    height: 90%;
+}
+.footer{
+    height: 80%;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    position: absolute;
+    top: 440%;
+    left: 0;
+}
+.footer-logo{
+    font-family: var(--font1);
+    font-size: 3rem;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    transform: translate(-50% ,-50%);
+    color:#181818
+}
+.footer-logo-the{
+    font-size: 1.3rem;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.footer-logo-hub{
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.footer-para{
+    position: absolute;
+    left: 3%;
+    font-size: 13px;
+    width: 40%;
+    color: #181818;
+    top: 42%;
+}
+.icons-div2{
+    width: 40%;
+    right: 10%;
+    position: absolute;
+    top: 73%;
+    left: 2%;
+}
+.social-media-icon2{
+    width: 6%;
+    margin: 3%;
+}
+.line5{
+    position: absolute;
+    background-color: #181818;
+    height: 85%;
+    width: 1px;
+    top: 7%;
+    left: 46%;
+    opacity: 0.3;
+}
+.contents-para{
+    color: #181818;
+    top: 10%;
+    left: 53%;
+    font-size: 25px;
+    position: absolute;
+}
+.contents-ul{
+    position: absolute;
+    top: 20%;
+    left: 52.5%;
+    list-style: none;
+}
+.contents-li{
+    margin: 10px;
+    color: rgb(105, 105, 105);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contents-li:hover{
+    color: rgb(23, 23, 23);
+}
+.achivements-para{
+    color: #181818;
+    top: 10%;
+    left: 72%;
+    font-size: 25px;
+    position: absolute;
+}
+.achivements-ul{
+    position: absolute;
+    top: 20%;
+    left: 72.5%;
+    list-style: none;
+}
+.achivements-li{
+    margin: 10px;
+    color: rgb(105, 105, 105);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.achivements-li:hover{
+    color: rgb(23, 23, 23);
 }
